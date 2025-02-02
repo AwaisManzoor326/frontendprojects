@@ -1,56 +1,52 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Get DOM elements
-  const amountInput = document.querySelector('input[type="number"]');
-  const selectFrom = document.querySelector("#fromCurrency"); // Ensure correct ID
-  const selectTo = document.querySelector("#toCurrency"); // Ensure correct ID
-  const resultOutput = document.querySelector(".result");
-  const convertBtn = document.querySelector(".btn");
+document.getElementById("convertBtn").addEventListener("click", function () {
+  let fromCurrency = document.getElementById("fromCurrency").value;
+  let toCurrency = document.getElementById("toCurrency").value;
+  let amountInput = document.getElementById("amountInput");
+  let resultOutput = document.querySelector(".result");
 
-  // Check if elements exist
-  if (!amountInput || !selectFrom || !selectTo || !convertBtn) {
-    console.error("One or more DOM elements not found!");
-    return;
-  }
-});
-// Currency conversion function
-const convertCurrency = async () => {
-  const amount = parseFloat(amountInput.value);
-  const fromCurrency = selectFrom.value;
-  const toCurrency = selectTo.value;
-
-  console.log("From Currency:", fromCurrency);
-  console.log("To Currency:", toCurrency);
-
-  if (!amount || isNaN(amount) || amount <= 0) {
-    resultOutput.textContent = "Please enter a valid amount.";
-    return;
-  }
+  console.log("From Currency:", fromCurrency); // Debugging
+  console.log("To Currency:", toCurrency); // Debugging
 
   if (!fromCurrency || !toCurrency) {
-    resultOutput.textContent = "Please select valid currencies.";
+    alert("Please select valid currencies.");
     return;
   }
 
-  const url = `https://v6.exchangerate-api.com/v6/a6f5050bdd797574c109cb38/latest/${fromCurrency}`;
+  // Currency conversion function
+  const convertCurrency = async () => {
+    const amount = parseFloat(amountInput.value);
+    const fromCurrency = document.getElementById("fromCurrency").value;
+    const toCurrency = document.getElementById("toCurrency").value;
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    console.log("API Response:", data);
-
-    if (!data.rates || !data.rates[toCurrency]) {
-      resultOutput.textContent = "Invalid currency selected.";
+    if (!amount || isNaN(amount) || amount <= 0) {
+      resultOutput.textContent = "Please enter a valid amount.";
       return;
     }
 
-    const exchangeRate = data.rates[toCurrency];
-    const convertedAmount = (amount * exchangeRate).toFixed(2);
-    resultOutput.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
-  } catch (error) {
-    resultOutput.textContent = "Error fetching exchange rate data.";
-  }
-};
+    if (!fromCurrency || !toCurrency) {
+      resultOutput.textContent = "Please select valid currencies.";
+      return;
+    }
 
-// Add event listener to the Convert button
-convertBtn.addEventListener("click", convertCurrency);
+    const url = `https://v6.exchangerate-api.com/v6/2e8cd14b421c7aee5e3e51a4/latest/${fromCurrency}/${toCurrency}`;
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      if (!data.rates || !data.rates[toCurrency]) {
+        resultOutput.textContent = "Invalid currency selected.";
+        return;
+      }
+
+      const exchangeRate = data.rates[toCurrency];
+      const convertedAmount = (amount * exchangeRate).toFixed(2);
+      resultOutput.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+    } catch (error) {
+      resultOutput.textContent = "Error fetching exchange rate data.";
+    }
+  };
+
+  // Event Listener for Button
+  convertCurrency();
+});
