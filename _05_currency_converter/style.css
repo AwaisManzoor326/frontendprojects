@@ -15,6 +15,10 @@
   border-radius: 10px;
 }
 
+.mainflex{
+  display: flex;
+}
+
 .container h3 {
   text-align: center;
   padding: 20px 20px 5px 20px;
@@ -48,9 +52,28 @@
 }
 
 .btn {
-  margin-left: 32vw; /* Center button */
+  margin-left: 29vw; /* Center button */
   display: block;
   margin-top: 15px;
+}
+
+.container2 table{
+  width: 500px !important;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.container2 table{
+  padding: 15px;
+  box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.1) ;
+}
+
+.container2 th{
+  padding: 20px;
+}
+
+.container2 h4{
+  text-align: center;
 }
 
 /* Media Query for Small Screens */
