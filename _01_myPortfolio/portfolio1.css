@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 200px;
+    position: sticky;
+    top: 0px;
+}
+
+header h2 a{
+    position: fixed;
+    text-decoration: none;
+    color: rgb(4, 0, 255);
+}
+
+.headerName{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 255);
+    margin-left: 200px;
+    width: 30%;
+    float: left;
+}
+
+h2 a:hover{
+    text-decoration: underline;
+    color: green;
+    transition: 1s;
+}
+
+.meer{
+    color: orange;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s ;
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: large;
+    
+}
+
+.sec1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 20px 20px 450px;
+    padding: 20px 20px 20px 20px;
+    height: 400px;
+}
+
+section h1.s1h1{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.sec1name{
+    color: blue;
+}
+
+section h2.s1h2{
+    margin-left: 20px;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.sec1p{
+    margin-right: 370px;
+    padding: 20px;
+    font-weight: 400px;
+}
+
+a.resume{
+    margin-left: 200px;
+    border: 2px solid blue;
+    padding: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+a.resume:hover{
+    color: white;
+    background-color: blue;
+    border: none;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.sec2{
+    height: 600px;
+}
+
+img{
+    width: 30%;
+    height: 50%;
+    margin: 30px;
+    padding: 10px;
+    float: left;
+}
+
+.me{
+    color: blue;
+}
+
+.s2h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.sec2 aside div{
+    width: 70%;
+    padding: 20px;
+}
+
+.s2p1{
+    padding: 20px;
+    font-size: medium;
+    font-weight:500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hobbies li{
+    margin: 10px 0px 0px 500px;
+    list-style-type: square;
+}
+
+.sec3{
+    height: 400px;
+}
+
+.s3h1{
+    text-align: center;
+    padding: 10px;
+    color: blue;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.skills1{
+    list-style-type: none;
+    margin-left: 70px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.skills1 li{
+    padding: 20px;
+    text-align: center;
+    margin-left: 100px;
+    border: 2px solid blue;
+    counter-reset: blue;
+    border-radius: 10px;
+}
+
+.skills1 li:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+.skills2{
+    list-style-type: none;
+    margin-left: 70px;
+    display: flex;
+}
+
+.skills2 li{
+    padding: 20px;
+    text-align: center;
+    margin-left: 100px;
+    border: 2px solid blue;
+    counter-reset: blue;
+    border-radius: 10px;
+}
+
+.skills2 li:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+.sec4{
+    height: 600px;
+    align-items: center;
+}
+
+.contact{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900px;
+}
+
+.touch{
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    font-size: x-large;
+    color: blue;
+}
