@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+
+        <header style="position: sticky; top: 1px; z-index: 1000; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);opacity: 90%;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="CLARUSWAY_LOGO.png" alt="logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                        style="font-weight: bold; font-size: 20px; color: black;">
+                        <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#students">Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img style="height: 550px; " src="slider1.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5
+                                style="color: red; font-weight: bold; text-shadow:3px 3px 3px black; ">Popular
+                                Education</h5>
+                            <p
+                                style="color: red; text-shadow:3px 3px 3px black;">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Fugiat,
+                                reiciendis.
+                            </p>
+                            <div>
+                                <button class="btn btn-danger">Start
+                                    Now</button>
+                                <button
+                                    class="btn btn-warning">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="height: 550px; " src="slider2.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5
+                                style="color: red; font-weight: bold; text-shadow:3px 3px 3px black;">Successful
+                                Future</h5>
+                            <p
+                                style="color: red; text-shadow:3px 3px 3px black;">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Fugiat,
+                                reiciendis.
+                            </p>
+                            <div>
+                                <button class="btn btn-danger">Start
+                                    Now</button>
+                                <button
+                                    class="btn btn-warning">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img style="height: 550px; " src="slider3.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5
+                                style="color: red; font-weight: bold; text-shadow:3px 3px 3px black;">Dream
+                                Job</h5>
+                            <p
+                                style="color: red; text-shadow:3px 3px 3px black;">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Fugiat,
+                                reiciendis.
+                            </p>
+                            <div>
+                                <button class="btn btn-danger">Start
+                                    Now</button>
+                                <button
+                                    class="btn btn-warning">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <main class="text-center">
+                <section id="about" class="container bg-light p-3">
+                    <h2 class="display-6 text-danger mb-4"
+                        style="font-weight: bold;">ABOUT US</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <i class="fas fa-globe-americas fa-2x"></i>
+                            <h4 style="font-weight: bold;">Online Courses</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quia
+                                modi assumenda ab. Rerum, sequi neque?
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <i class="fas fa-headset fa-2x"></i>
+                            <h4 style="font-weight: bold;">Fulltime
+                                Mentoring</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quia
+                                modi assumenda ab. Rerum, sequi neque? Lorem
+                                ipsum, dolor sit amet
+                                consectetur adipisicing elit. Ipsa, quos.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <i class="fas fa-book-open fa-2x"></i>
+                            <h4 style="font-weight: bold;">Learn Yourself</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quia
+                                modi assumenda ab. Rerum, sequi neque?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="instructors" class="container bg-dark p-3">
+                    <h2 class="display-6 text-danger"
+                        style="font-weight: bold;">INSTRUCTORS</h2>
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher1.jpg"
+                                    class="card-img-top" alt="t1" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Josh Ren</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher2.jpg"
+                                    class="card-img-top" alt="t2" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Bob Ken</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher3.jpg"
+                                    class="card-img-top" alt="t3" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Elizabeth</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher4.jpg"
+                                    class="card-img-top" alt="t4" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Johny
+                                        Came</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher5.jpg"
+                                    class="card-img-top" alt="t5" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Osho</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card">
+                                <img src="teacher6.jpg"
+                                    class="card-img-top" alt="t6" />
+                                <div class="card-body">
+                                    <h5 class="card-title"
+                                        style="font-weight: bold;">Ryu Ken</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                    <div
+                                        class="socials d-flex justify-content-around">
+                                        <i
+                                            class="fa-brands fa-facebook-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-instagram-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-twitter-square fa-2x text-danger"></i>
+                                        <i
+                                            class="fa-brands fa-google-plus-square fa-2x text-danger"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="students" class="container bg-light p-3">
+                    <h2 class="display-6 text-danger">OUR STUDENTS</h2>
+                    <div
+                        class="row align-items-center flex-column-reverse flex-md-row g-3">
+                        <div class="col-md-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Earum,
+                                doloremque quam! In sit aliquam sapiente ad
+                                dicta facilis
+                                explicabo cupiditate laudantium repudiandae,
+                                dignissimos, aliquid
+                                aut quos omnis repellat. Eaque quos, nobis illo
+                                dolor alias labore
+                                obcaecati rem odit explicabo maiores?
+                            </p>
+                            <button class="btn btn-danger">Learn More</button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="students1.png" width="70%" alt />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="courses" class="container bg-dark p-3">
+                    <h2 class="display-6 text-danger">COURSES</h2>
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link active"
+                                id="pills-home-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#fs-images"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-home"
+                                aria-selected="true" style="color: white;">
+                                Full-Stack
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#ds-images"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-profile"
+                                aria-selected="false" style="color: white;">
+                                Data-Science
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                id="pills-contact-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#dev-images"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-contact"
+                                aria-selected="false" style="color: white;">
+                                DevOps
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="fs-images"
+                            role="tabpanel"
+                            aria-labelledby="pills-home-tab"
+                            tabindex="0">
+                            <div class="row g-2">
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/fs1.jpg">
+                                        <img
+                                            src="fs1.jpg"
+                                            class="img-thumbnail"
+                                            alt="fs1" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/fs2.jpg">
+                                        <img
+                                            src="fs2.jpg"
+                                            class="img-thumbnail"
+                                            alt="fs2" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/fs3.jpg">
+                                        <img
+                                            src="fs3.jpg"
+                                            class="img-thumbnail"
+                                            alt="fs3" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/fs4.jpg">
+                                        <img
+                                            src="fs4.jpg"
+                                            class="img-thumbnail"
+                                            alt="fs4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="ds-images"
+                            role="tabpanel"
+                            aria-labelledby="pills-profile-tab"
+                            tabindex="0">
+                            <div class="row g-2">
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ds1.jpg">
+                                        <img
+                                            src="ds1.jpg"
+                                            class="img-thumbnail"
+                                            alt="ds1" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ds2.jpg">
+                                        <img
+                                            src="ds2.jpg"
+                                            class="img-thumbnail"
+                                            alt="ds2" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ds3.jpg">
+                                        <img
+                                            src="ds3.jpg"
+                                            class="img-thumbnail"
+                                            alt="ds3" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ds4.jpg">
+                                        <img
+                                            src="ds4.jpg"
+                                            class="img-thumbnail"
+                                            alt="ds4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="dev-images"
+                            role="tabpanel"
+                            aria-labelledby="pills-contact-tab"
+                            tabindex="0">
+                            <div class="row g-2">
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ops1.jpg">
+                                        <img
+                                            src="ops1.jpg"
+                                            class="img-thumbnail"
+                                            alt="ops1" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ops2.jpg">
+                                        <img
+                                            src="ops2.jpg"
+                                            class="img-thumbnail"
+                                            alt="ops2" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ops3.jpg">
+                                        <img
+                                            src="ops3.jpg"
+                                            class="img-thumbnail"
+                                            alt="ops3" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <a data-fslightbox
+                                        href="./img/thumbnail/ops.jpg">
+                                        <img
+                                            src="ops4.jpg"
+                                            class="img-thumbnail"
+                                            alt="ops4" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="container bg-light p-3">
+                    <h2 class="display-6 text-danger">CONTACT</h2>
+
+                    <article id="form">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Exercitationem, sit nulla numquam sunt esse aliquam?
+                            Quae, delectus!
+                            Saepe, explicabo dolor!
+                        </p>
+
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <i class="fas fa-phone fa-2x text-danger"></i>
+                                <h4>Telephone</h4>
+                                <a href="tel:+92 328 8658326">+92 328
+                                    8658326</a>
+                            </div>
+                            <div class="col-md-4">
+                                <i
+                                    class="fab fa-whatsapp fa-3x text-danger"></i>
+                                <h4>Whatsapp</h4>
+                                <a
+                                    href="https://wa.me/+92 328 8658326">+92 328
+                                    8658326</a>
+                            </div>
+                            <div class="col-md-4">
+                                <i
+                                    class="fas fa-envelope fa-2x text-danger"></i>
+                                <h4>email</h4>
+                                <a
+                                    href="awaismeer019@gmail.com">awaismeer019@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <form class="row g-3 mt-4">
+                            <div class="col-md-6">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Enter your name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="enter your email" />
+                            </div>
+                            <div class="col-12">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="subject"
+                                    placeholder="Enter your subject" />
+                            </div>
+
+                            <div class="col-12 form-floating">
+                                <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="comment"
+                                    placeholder="Enter your comments"></textarea>
+                                <label for="comment">Comments</label>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-danger"
+                                    style="width: 7rem">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+
+                    <article id="location" class="mt-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192698.5521395148!2d28.871754336967353!3d41.005236293762124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1663183693965!5m2!1sen!2str"
+                            width="100%"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen="true"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="bg-dark text-center text-white p-4">
+                <article>
+                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                </article>
+
+                <article class="p-4 h6">
+                    &copy 2025 Copyright by Clarusway
+                </article>
+            </footer>
+
+            <a class="btn-up" href="#body">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        </body>
+    </html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter - Convert yours</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+  </head>
+  <body id="gotobody">
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">CurrencyConverter</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"
+                  href="#gotobody">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUS.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opinion.html">Give Opinion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="motivation.html">Take Motivation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5">
+      <div class="container">
+        <div>
+          <h3>Convert Your Currency</h3> <hr class="custom-hr">
+          <div class="mainflex">
+
+            <form class="Form" action="convertCurrency.php">
+              <div class="d-flex flex-column gap-2">
+                <label class="selectCountry">Select your currency:</label>
+                <select name="currency" id="fromCurrency" class="form-select"
+                  aria-label="Multiple select example">
+                  <option value="AFN">AFN - Afghan Afghani</option>
+                  <option value="ALL">ALL - Albanian Lek</option>
+                  <option value="DZD">DZD - Algerian Dinar</option>
+                  <option value="AOA">AOA - Angolan Kwanza</option>
+                  <option value="ARS">ARS - Argentine Peso</option>
+                  <option value="AUD">AUD - Australian Dollar</option>
+                  <option value="AZN">AZN - Azerbaijani Manat</option>
+                  <option value="BDT">BDT - Bangladeshi Taka</option>
+                  <option value="BHD">BHD - Bahraini Dinar</option>
+                  <option value="BBD">BBD - Barbadian Dollar</option>
+                  <option value="BYN">BYN - Belarusian Ruble</option>
+                  <option value="BMD">BMD - Bermudian Dollar</option>
+                  <option value="BOB">BOB - Bolivian Boliviano</option>
+                  <option value="BRL">BRL - Brazilian Real</option>
+                  <option value="BND">BND - Brunei Dollar</option>
+                  <option value="BGN">BGN - Bulgarian Lev</option>
+                  <option value="BIF">BIF - Burundian Franc</option>
+                  <option value="KHR">KHR - Cambodian Riel</option>
+                  <option value="CAD">CAD - Canadian Dollar</option>
+                  <option value="CNY">CNY - Chinese Yuan</option>
+                  <option value="COP">COP - Colombian Peso</option>
+                  <option value="CRC">CRC - Costa Rican Colón</option>
+                  <option value="HRK">HRK - Croatian Kuna</option>
+                  <option value="CZK">CZK - Czech Koruna</option>
+                  <option value="DKK">DKK - Danish Krone</option>
+                  <option value="EGP">EGP - Egyptian Pound</option>
+                  <option value="EUR">EUR - Euro</option>
+                  <option value="FJD">FJD - Fijian Dollar</option>
+                  <option value="GHS">GHS - Ghanaian Cedi</option>
+                  <option value="HKD">HKD - Hong Kong Dollar</option>
+                  <option value="HUF">HUF - Hungarian Forint</option>
+                  <option value="ISK">ISK - Icelandic Krona</option>
+                  <option value="INR">INR - Indian Rupee</option>
+                  <option value="IDR">IDR - Indonesian Rupiah</option>
+                  <option value="IRR">IRR - Iranian Rial</option>
+                  <option value="IQD">IQD - Iraqi Dinar</option>
+                  <option value="ILS">ILS - Israeli New Shekel</option>
+                  <option value="JMD">JMD - Jamaican Dollar</option>
+                  <option value="JPY">JPY - Japanese Yen</option>
+                  <option value="JOD">JOD - Jordanian Dinar</option>
+                  <option value="KES">KES - Kenyan Shilling</option>
+                  <option value="KRW">KRW - South Korean Won</option>
+                  <option value="KWD">KWD - Kuwaiti Dinar</option>
+                  <option value="LBP">LBP - Lebanese Pound</option>
+                  <option value="MYR">MYR - Malaysian Ringgit</option>
+                  <option value="MXN">MXN - Mexican Peso</option>
+                  <option value="MAD">MAD - Moroccan Dirham</option>
+                  <option value="NPR">NPR - Nepalese Rupee</option>
+                  <option value="NZD">NZD - New Zealand Dollar</option>
+                  <option value="NGN">NGN - Nigerian Naira</option>
+                  <option value="NOK">NOK - Norwegian Krone</option>
+                  <option value="OMR">OMR - Omani Rial</option>
+                  <option value="PKR">PKR - Pakistani Rupee</option>
+                  <option value="PEN">PEN - Peruvian Sol</option>
+                  <option value="PHP">PHP - Philippine Peso</option>
+                  <option value="PLN">PLN - Polish Złoty</option>
+                  <option value="QAR">QAR - Qatari Riyal</option>
+                  <option value="RON">RON - Romanian Leu</option>
+                  <option value="RUB">RUB - Russian Ruble</option>
+                  <option value="SAR">SAR - Saudi Riyal</option>
+                  <option value="SGD">SGD - Singapore Dollar</option>
+                  <option value="ZAR">ZAR - South African Rand</option>
+                  <option value="LKR">LKR - Sri Lankan Rupee</option>
+                  <option value="SEK">SEK - Swedish Krona</option>
+                  <option value="CHF">CHF - Swiss Franc</option>
+                  <option value="THB">THB - Thai Baht</option>
+                  <option value="TRY">TRY - Turkish Lira</option>
+                  <option value="AED">AED - United Arab Emirates Dirham</option>
+                  <option value="GBP">GBP - British Pound Sterling</option>
+                  <option value="USD">USD - United States Dollar</option>
+                  <option value="VND">VND - Vietnamese Đồng</option>
+                  <option value="YER">YER - Yemeni Rial</option>
+                  <option value="ZMW">ZMW - Zambian Kwacha</option>
+                </select>
+
+                <label class="amount" for="amount">Enter Amount:</label>
+                <input name="quantity" id="amountInput" type="number"
+                  class="form-control"
+                  placeholder="Enter Amount">
+              </form>
+
+              <button type="button" class="btn btn-dark"
+                id="convertBtn">Convert</button>
+            </div>
+
+            <div class="container2">
+              <h4>Conversion Results</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Code</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+      <script src="script.js"></script>
+
+    </body>
+  </html>

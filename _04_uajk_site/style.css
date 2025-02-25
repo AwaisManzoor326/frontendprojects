@@ -1,0 +1,375 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.topHeader {
+  display: block;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+}
+
+.navbar-nav {
+  margin-left: 80px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(5, 39, 131) !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: darkorange !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: darkorange !important;
+  text-decoration: underline;
+}
+
+.midheader {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+  left: 0px;
+}
+
+.uni {
+  font-size: small;
+}
+
+/* Apply blue color to all links and white background */
+.midheader .navbar-nav .nav-link {
+  color: darkblue !important;
+  font-weight: bold;
+}
+
+/* Dropdown menu links */
+.midheader .dropdown-menu {
+  background-color: white !important; /* Dropdown background */
+}
+
+.midheader .dropdown-menu .dropdown-item {
+  color: darkblue !important;
+}
+
+.midheader .nav-link:hover,
+.midheader .dropdown-menu .dropdown-item:hover {
+  color: darkblue !important;
+}
+
+/* Remove extra margin and align section to the left */
+.midheader .row {
+  margin: 0 !important; /* Remove left margin */
+  padding: 0 !important; /* Remove extra padding */
+}
+
+/* Ensure navbar and content align properly */
+.midheader {
+  padding-left: 0; /* Ensure no padding on the left */
+  margin-left: 0; /* Ensure no margin on the left */
+}
+
+/* Adjust container width */
+.midheader .container-fluid {
+  padding: 0 !important; /* Remove default container padding */
+}
+
+.midheader img {
+  margin-left: 40px;
+}
+
+/* Responsive: Hide logo and university name on smaller screens */
+@media (max-width: 768px) {
+  .midheader .navbar-brand {
+    display: none; /* Hide logo and university name */
+  }
+}
+
+.carousel-item img {
+  height: 600px;
+  width: auto;
+}
+
+.sec2-VC {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 50px;
+  background-color: aliceblue;
+}
+
+.message {
+  margin-left: 100px;
+  margin-right: 100px;
+  color: darkblue;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.msg {
+  color: darkorange;
+}
+
+.std {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-left: 750px;
+}
+
+.sec3-events {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.evnt {
+  color: darkorange;
+}
+
+.sec3-events img {
+  border: 3px solid darkorange;
+}
+
+.sec4-nn {
+  display: flex;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.lefty {
+  float: left;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 130px;
+  background-color: aliceblue;
+  width: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lefty .notice {
+  margin-left: 100px;
+}
+
+.righty {
+  float: right;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-left: 130px;
+  background-color: rgb(215, 227, 236);
+  width: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news {
+  text-align: center;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+ul a:hover {
+  transition: 0.5s;
+  color: darkorange;
+}
+
+.Nlist {
+  padding-left: 0px;
+}
+
+.card {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: small;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: navy;
+}
+
+.card-body a:hover {
+  transition: 0.5s;
+  color: darkorange;
+  text-decoration: underline;
+}
+
+.AP {
+  margin: 50px 50px 50px 50px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accademic{
+  text-align: center;
+}
+
+.programs{
+  display: flex;
+  align-items: center;
+}
+
+.programs .card{
+  width: 30%;
+  margin-left: 15px;
+}
+
+.programs .btn{
+  margin: 0px 0px 0px 210px;
+}
+
+.programs img{
+  border: 2px solid darkblue;
+  padding: 5px;
+  border-radius: 0px;
+}
+
+.programs .btn:hover{
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+}
+
+.programs img:hover{
+  border: 2px solid darkorange;
+}
+
+.s6-stats{
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 50px 50px 50px 50px;
+  background-color: azure;
+  padding: 10px;
+}
+
+.rectangles .col{
+  background-color: darkblue;
+  margin: 10px;
+  height: 150px;
+  color: white;
+  font-weight: bold;
+  padding: 50px;
+  font-size: 1.3rem;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.s7-campuses{
+  margin: 50px;
+  padding: 20px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Ucampuses img{
+  height: 170px;
+  width: 200px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid darkblue;
+}
+
+.s8-qlinks{
+  margin: 50px;
+  padding: 20px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: azure;
+}
+
+.qlinks .col{
+  background-color: navy;
+  padding: 30px;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.qlinks a{
+  text-decoration: none;
+  color: white;
+}
+
+.qlinks .col:hover{
+  transition: 0.5s;
+  background-color: darkorange;
+}
+
+.qlinks a:hover{
+  transition: 0.5s;
+  color: navy;
+}
+
+.s9-foot{
+  margin: 0px;
+  padding: 50px;
+  width: 1500px;
+  height: 300px;
+  background-color: navy;
+  color: white;
+}
+
+.s9-foot h5{
+  color: darkorange;
+  line-height: 40px;
+}
+
+.s9-foot a{
+  text-decoration: none;
+  color: white;
+}
+
+.s9-foot .p1h{
+  line-height: 20px;
+}
+
+.s9-foot .p2p{
+  line-height: 10px;
+}
+
+.s9-foot .p2f{
+  line-height: 0px;
+  margin-top: 0px;
+}
+
+.s9-foot img{
+  height: 100px;
+  width: 100px;
+}
+
+.s10-copyright{
+  background-color: rgb(5, 5, 68);
+  width: 1500px;
+  height: 100px;
+}
+
+.s10-copyright h5{
+  padding: 20px;
+  margin-left: 400px;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+}

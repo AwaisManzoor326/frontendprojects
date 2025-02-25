@@ -1,0 +1,100 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 100%; /* Full width for mobile screens */
+  max-width: 500px; /* Maximum width for larger screens */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+.mainflex{
+  display: flex;
+}
+
+.container h3 {
+  text-align: center;
+  padding: 20px 20px 5px 20px;
+  font-weight: bold;
+}
+
+.custom-hr {
+  border: 1.5px solid black;
+  opacity: 1;
+}
+
+.Form {
+  max-width: 35vw;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.selectCountry,
+.amount {
+  font-weight: bold;
+}
+
+.Form label {
+  margin-top: 5px;
+}
+
+.result {
+  font-weight: medium;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.btn {
+  margin-left: 29vw; /* Center button */
+  display: block;
+  margin-top: 15px;
+}
+
+.container2 table{
+  width: 500px !important;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.container2 table{
+  padding: 15px;
+  box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.1) ;
+}
+
+.container2 th{
+  padding: 20px;
+}
+
+.container2 h4{
+  text-align: center;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin: 30px auto; /* Reduced margin on small screens */
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
+
+/* Media Query for Medium Screens */
+@media (max-width: 991px) {
+  .container {
+    width: 80%;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
