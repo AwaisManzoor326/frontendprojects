@@ -120,7 +120,7 @@
                 <section class="midheader sticky-top">
                     <div class="row bg-light">
                         <nav class="navbar bg-body-tertiary">
-                            <div class="col-3 justify-center">
+                            <div class="col-12 col-md-3 justify-center">
                                 <div class="container-fluid">
                                     <a class="navbar-brand" href="#">
                                         <img src="UAJK logo.jpeg" alt="Logo"
@@ -132,7 +132,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-12 col-md-9">
                                 <nav
                                     class="navbar navbar-expand-lg bg-tertiary">
                                     <div class="container-fluid">
@@ -342,7 +342,6 @@
         </header>
 
         <main>
-
             <section class="sec1-pix">
                 <div id="carouselExampleDark"
                     class="carousel carousel-dark slide">
@@ -361,7 +360,8 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active"
                             data-bs-interval="10000">
-                            <img src="kac.jpeg" class="d-block w-100" alt="...">
+                            <img src="kac.jpeg" class="d-block w-100 img-fluid"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>King Abdullah Campus</h5>
                                 <p>Gifted from Saudi Arabians, it located 20 km
@@ -370,7 +370,8 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="cityC.jpeg" class="d-block w-100"
+                            <img src="cityC.jpeg"
+                                class="d-block w-100 img-fluid"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 style="color: white;">City Campus</h5>
@@ -380,7 +381,8 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="chellaC.jpeg" class="d-block w-100"
+                            <img src="chellaC.jpeg"
+                                class="d-block w-100 img-fluid"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Chella Campus</h5>
@@ -406,104 +408,118 @@
                 </div>
             </section>
 
-            <section class="sec2-VC">
-                <div>
-                    <img src="vc.jpeg" alt="VC">
-                </div>
-                <div class="message">
-                    <h1>Vice Chancellor's <span class="msg">Message</span></h1>
-                    <h5 style="font-weight: bold;">Prof. Dr. Muhammad Kaleem
-                        Abbasi</h5>
-                    <p class="std">My dear students,</p>
-                    <p class="p1">
-                        Since its inception in 1980, the University of Azad
-                        Jammu and Kashmir (UAJK) has maintained an upward
-                        trajectory of sustainable growth despite various
-                        challenges. The university’s progress during the past
-                        year has been remarkable in terms of its physical
-                        infrastructure, faculty development, transparent
-                        governance and starting new academic courses and
-                        programs.
-                    </p>
-                    <p class="p2">
-                        Although the academic year 2020-21 will be remembered as
-                        one of the most challenging and uncertain times in the
-                        history of our institution because of Covid-19 outbreak,
-                        however, our University community rose collectively to
-                        the challenge and continued to deliver outstanding
-                        outcomes in both education and research by adopting
-                        alternative measures.
-                    </p>
-                    <button type="button" class="btn btn-primary">Read
-                        more</button>
-                </div>
-            </section>
-
-            <section class="sec3-events">
-                <h1 style="color: darkblue;">Current <span
-                        class="evnt">Events</span></h1>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <img src="neelumC.jpeg" alt>
-                        </div>
-                        <div class="col">
-                            <img src="cityC.jpeg" alt>
-                        </div>
-                        <div class="col">
-                            <img src="chellaC.jpeg" alt>
-                        </div>
+            <section class="sec2-VC container my-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="vc.jpeg" alt="VC" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Vice Chancellor's <span
+                                class="msg">Message</span></h1>
+                        <h5 style="font-weight: bold;">Prof. Dr. Muhammad Kaleem
+                            Abbasi</h5>
+                        <p class="std">My dear students,</p>
+                        <p class="p1">
+                            Since its inception in 1980, the University of Azad
+                            Jammu and Kashmir (UAJK) has maintained an upward
+                            trajectory of sustainable growth despite various
+                            challenges. The university’s progress during the
+                            past
+                            year has been remarkable in terms of its physical
+                            infrastructure, faculty development, transparent
+                            governance and starting new academic courses and
+                            programs.
+                        </p>
+                        <p class="p2">
+                            Although the academic year 2020-21 will be
+                            remembered as
+                            one of the most challenging and uncertain times in
+                            the
+                            history of our institution because of Covid-19
+                            outbreak,
+                            however, our University community rose collectively
+                            to
+                            the challenge and continued to deliver outstanding
+                            outcomes in both education and research by adopting
+                            alternative measures.
+                        </p>
+                        <button type="button" class="btn btn-primary">Read
+                            more</button>
                     </div>
                 </div>
             </section>
 
-            <section class="sec4-nn">
-                <div class="lefty">
-                    <h1 class="notice">Notice <span
-                            style="color: darkorange;">Board</span></h1>
-                    <hr><br>
-                    <ul class="Nlist">
-                        <li><a href="#">Sardar Masood Khan Praises UAJK's
-                                Academic Excellence and Growth.</a></li>
-                        <li><a href="#">Orientation and training program for
-                                newly induction faculty at UAJ&K.</a></li>
-                        <li><a href="#">Due to some unavoidable circumstances,
-                                the UGAT for MPhil and PhD. Scheduled on 11th
-                                January 2025 has now been rescheduled on 18th
-                                January 2025. So please be informed.</a></li>
-                        <li><a href="#">The Pakistan Engineering Council (PEC),
-                                in its 116th EAB meeting, has re-accredited
-                                UAJK's engineering programs. under Washington
-                                Accord Level-II standards!</a></li>
-                        <li><a href="#">Quaid-e-Azam Day collaboration at Jhelum
-                                Valley Campus.</a></li>
-                        <li><a href="#">NIM Peshawar Delegation Explores
-                                Academic Excellence at UAJK.</a></li>
-                        <li><a href="#">UAJK Leads Efforts to Establish Resource
-                                and Communication Across AJ&K</a></li>
-                        <li><a href="#">Urdu Department Concludes Three Day
-                                Sports Gala.</a></li>
-                        <li><a href="#">Pakistan Navy Career Guidance Session at
-                                University.</a></li>
-                        <li><a href="#">HEC Budget Proformas F.Y
-                                2025-26</a></li>
-                        <li><a href="#">Pay Education Fee Now Online</a></li>
-                        <li><a href="#">Pay Education Fee Now Online Video
-                                Tutorial </a></li>
-                        <li><a href="#">EXPO 2024 By Allied Health
-                                Society</a></li>
-                        <li><a href="#"><b>Prospectus 2022-23 </b></a></li>
-                        <li><a href="#"><b>Alumni Registration Form</b></a></li>
-                    </ul>
+            <section class="sec3-events container my-5">
+                <h1 style="color: darkblue;">Current <span
+                        class="evnt">Events</span></h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="neelumC.jpeg" alt="Event 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="cityC.jpeg" alt="Event 2" class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="chellaC.jpeg" alt="Event 3" class="img-fluid">
+                    </div>
                 </div>
+            </section>
 
-                <div class="righty">
-                    <span class="news">
+            <section class="sec4-nn container my-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="notice">Notice <span
+                                style="color: darkorange;">Board</span></h1>
+                        <hr><br>
+                        <ul class="Nlist">
+                            <li><a href="#">Sardar Masood Khan Praises UAJK's
+                                    Academic Excellence and Growth.</a></li>
+                            <li><a href="#">Orientation and training program for
+                                    newly induction faculty at UAJ&K.</a></li>
+                            <li><a href="#">Due to some unavoidable
+                                    circumstances,
+                                    the UGAT for MPhil and PhD. Scheduled on
+                                    11th
+                                    January 2025 has now been rescheduled on
+                                    18th
+                                    January 2025. So please be
+                                    informed.</a></li>
+                            <li><a href="#">The Pakistan Engineering Council
+                                    (PEC),
+                                    in its 116th EAB meeting, has re-accredited
+                                    UAJK's engineering programs. under
+                                    Washington
+                                    Accord Level-II standards!</a></li>
+                            <li><a href="#">Quaid-e-Azam Day collaboration at
+                                    Jhelum
+                                    Valley Campus.</a></li>
+                            <li><a href="#">NIM Peshawar Delegation Explores
+                                    Academic Excellence at UAJK.</a></li>
+                            <li><a href="#">UAJK Leads Efforts to Establish
+                                    Resource
+                                    and Communication Across AJ&K</a></li>
+                            <li><a href="#">Urdu Department Concludes Three Day
+                                    Sports Gala.</a></li>
+                            <li><a href="#">Pakistan Navy Career Guidance
+                                    Session at
+                                    University.</a></li>
+                            <li><a href="#">HEC Budget Proformas F.Y
+                                    2025-26</a></li>
+                            <li><a href="#">Pay Education Fee Now
+                                    Online</a></li>
+                            <li><a href="#">Pay Education Fee Now Online Video
+                                    Tutorial </a></li>
+                            <li><a href="#">EXPO 2024 By Allied Health
+                                    Society</a></li>
+                            <li><a href="#"><b>Prospectus 2022-23 </b></a></li>
+                            <li><a href="#"><b>Alumni Registration
+                                        Form</b></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
                         <h1 class="notice">In <span
                                 style="color: darkorange;">News</span></h1>
                         <hr><br>
-                    </span>
-                    <div class="container">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -520,7 +536,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -537,7 +552,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -554,7 +568,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -575,75 +588,97 @@
                 </div>
             </section>
 
-            <section class="AP">
+            <section class="AP container my-5">
                 <h1 class="accademic">Accademic <span
                         style="color: darkorange;">Programs</span></h1>
                 <hr><br>
-                <div class="programs">
-                    <div class="card">
-                        <img src="cityC.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Undergraduate Programs</h5>
-                            <p class="card-text">The Undergraduate education
-                                holds key to foundation building of students of
-                                University of Azad Jammu & Kashmir. Our diverse
-                                UG programmes transform students into
-                                knowledgeable individuals.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="cityC.jpeg" class="card-img-top img-fluid"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Undergraduate
+                                    Programs</h5>
+                                <p class="card-text">The Undergraduate education
+                                    holds key to foundation building of students
+                                    of
+                                    University of Azad Jammu & Kashmir. Our
+                                    diverse
+                                    UG programmes transform students into
+                                    knowledgeable individuals.</p>
+                                <a href="#" class="btn btn-primary">Read
+                                    more</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="neelumC.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Postgraduate Programs</h5>
-                            <p class="card-text">Postgraduate programmes
-                                permeate the spirit of enquiry amongst students
-                                and advance their knowledge and skills in
-                                specialised fields. We offers number of
-                                programmes at the Master level.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="neelumC.jpeg"
+                                class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Postgraduate
+                                    Programs</h5>
+                                <p class="card-text">Postgraduate programmes
+                                    permeate the spirit of enquiry amongst
+                                    students
+                                    and advance their knowledge and skills in
+                                    specialised fields. We offers number of
+                                    programmes at the Master level.</p>
+                                <a href="#" class="btn btn-primary">Read
+                                    more</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="chellaC.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PhD Programs</h5>
-                            <p class="card-text">In the modern world, gaining an
-                                economic advantage largely depends on the
-                                production of new knowledge. The goal of
-                                doctoral programs was to generate knowledge
-                                which allow economic expansion.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="chellaC.jpeg"
+                                class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">PhD Programs</h5>
+                                <p class="card-text">In the modern world,
+                                    gaining an
+                                    economic advantage largely depends on the
+                                    production of new knowledge. The goal of
+                                    doctoral programs was to generate knowledge
+                                    which allow economic expansion.</p>
+                                <a href="#" class="btn btn-primary">Read
+                                    more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="s6-stats">
+            <section class="s6-stats container my-5">
                 <h1 class="accademic">University <span
                         style="color: darkorange;">Statistics</span></h1>
                 <hr><br>
-                <div class="container text-center">
-                    <span class="rectangles">
-                        <div class="row">
-                            <div class="col">
-                                4 <br>Campuses
-                            </div>
-                            <div class="col">
-                                29 <br>Departments
-                            </div>
-                            <div class="col">
-                                42 <br>Programs
-                            </div>
-                            <div class="col">
-                                7,692 <br> students
-                            </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="p-3 border bg-light">
+                            4 <br>Campuses
                         </div>
-                    </span>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 border bg-light">
+                            29 <br>Departments
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 border bg-light">
+                            42 <br>Programs
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-3 border bg-light">
+                            7,692 <br> students
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="s7-campuses">
+            <section class="s7-campuses container my-5">
                 <h1 class="accademic">University <span
                         style="color: darkorange;">Campuses</span></h1>
                 <hr><br>
@@ -655,108 +690,102 @@
                     namely
                     Main campus (Muzaffarabad), Neelum campus (Athmuqam) and
                     Jhelum Valley campus (Hattian Bala).</p>
-                <div class="container text-center">
-                    <span class="Ucampuses">
-                        <div class="row">
-                            <div class="col">
-                                <img src="chellaC.jpeg" alt="Chella campus">
-                            </div>
-                            <div class="col">
-                                <img src="cityC.jpeg" alt="City campus">
-                            </div>
-                            <div class="col">
-                                <img src="kac.jpeg" alt="King Abdullah campus">
-                            </div>
-                            <div class="col">
-                                <img src="neelumC.jpeg" alt="Neelum campus">
-                            </div>
-                        </div>
-                    </span>
-                </div>
-            </section>
-
-            <section class="s8-qlinks">
-                <h1 class="accademic">Quick <span
-                        style="color: darkorange;">Links</span></h1>
-                <hr><br>
-                <div class="container text-center">
-                    <span class="qlinks">
-                        <div class="row">
-                            <div class="col">
-                                <a href>Digital Library</a>
-                            </div>
-                            <div class="col">
-                                <a href>Results</a>
-                            </div>
-                            <div class="col">
-                                <a href>Scholarships</a>
-                            </div>
-                            <div class="col">
-                                <a href="Downloads">Downloads</a>
-                            </div>
-                            <div class="col">
-                                <a href>Prospectus</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href>Online Challan</a>
-                            </div>
-                            <div class="col">
-                                <a href>Annual Report</a>
-                            </div>
-                            <div class="col">
-                                <a href>Roll no Slips</a>
-                            </div>
-                            <div class="col">
-                                <a href>UGAT</a>
-                            </div>
-                            <div class="col">
-                                <a href>Faculty Portal</a>
-                            </div>
-                        </div>
-                    </span>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <section class="s9-foot">
-                <div class="container text-left">
-                    <div class="row">
-                        <div class="col">
-                            <h5>Faculties</h5>
-                            <a href>Faculty of Humanities and Social
-                                Sciences</a><br>
-                            <a href>Faculty of science</a><br>
-                            <a href>Faculty of engineering</a><br>
-                            <a href>Health and Medical science</a><br>
-                        </div>
-                        <div class="col">
-                            <h5>Useful links</h5>
-                            <a href>Introduction</a><br>
-                            <a href>Tender Notices</a><br>
-                            <a href>Downloads</a><br>
-                            <a href>University Jobs</a><br>
-                            <a href>Resukts</a><br>
-                        </div>
-                        <div class="col">
-                            <h5>Contact us</h5>
-                            <p class="p1h">Need help or have a question?</p>
-                            <p class="p2p">Phone: (+92) 5822-960466-470</p><br>
-                            <p class="p2f">Fax: (+92) 5822-960407</p><br>
-                            <p>Contact us at: registrar@ajku.edu.pk</p><br>
-                        </div>
-                        <div class="col text-center">
-                            <img src="UAJK logo.jpeg" alt><br>
-                            <caption>The University of Azad Jammu and
-                                Kashmir-Muzaffarabad</caption>
-                        </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="chellaC.jpeg" alt="Chella campus"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="cityC.jpeg" alt="City campus"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="kac.jpeg" alt="King Abdullah campus"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="neelumC.jpeg" alt="Neelum campus"
+                            class="img-fluid">
                     </div>
                 </div>
             </section>
 
-            <section class="s10-copyright">
+            <section class="s8-qlinks container my-5">
+                <h1 class="accademic">Quick <span
+                        style="color: darkorange;">Links</span></h1>
+                <hr><br>
+                <div class="row text-center">
+                    <div class="col-md-2">
+                        <a href>Digital Library</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Results</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Scholarships</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="Downloads">Downloads</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Prospectus</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Online Challan</a>
+                    </div>
+                </div>
+                <div class="row text-center mt-3">
+                    <div class="col-md-2">
+                        <a href>Annual Report</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Roll no Slips</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>UGAT</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href>Faculty Portal</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-white mt-5">
+            <section class="s9-foot container py-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Faculties</h5>
+                        <a href>Faculty of Humanities and Social
+                            Sciences</a><br>
+                        <a href>Faculty of science</a><br>
+                        <a href>Faculty of engineering</a><br>
+                        <a href>Health and Medical science</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Useful links</h5>
+                        <a href>Introduction</a><br>
+                        <a href>Tender Notices</a><br>
+                        <a href>Downloads</a><br>
+                        <a href>University Jobs</a><br>
+                        <a href>Results</a><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contact us</h5>
+                        <p class="p1h">Need help or have a question?</p>
+                        <p class="p2p">Phone: (+92) 5822-960466-470</p><br>
+                        <p class="p2f">Fax: (+92) 5822-960407</p><br>
+                        <p>Contact us at: registrar@ajku.edu.pk</p><br>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <img src="UAJK logo.jpeg" alt><br>
+                        <caption>The University of Azad Jammu and
+                            Kashmir-Muzaffarabad</caption>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s10-copyright text-center py-3 bg-secondary">
                 <h5>Copyright &copy; 2025 - The University of Azad Jammu &
                     Kashmir - Muzaffarabad </h5>
             </section>
